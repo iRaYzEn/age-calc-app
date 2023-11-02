@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="all">
+    <script defer src="index.js"></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <form class="form">
+                <div class="inputs">
+                    <div class="card__input-cont">
+                        <label class="input__label input__label-day" for="day">day</label>
+                        <input class="input__input input__input-day" type="text" name="day" placeholder="DD">
+                        <div class="error-element error-element-day"></div>
+                    </div>
+                    <div class="card__input-cont">
+                        <label class="input__label input__label-month" for="month">month</label>
+                        <input class="input__input input__input-month" type="text" name="month" placeholder="MM">
+                        <div class="error-element error-element-month"></div>
+                    </div>
+                    <div class="card__input-cont">
+                        <label class="input__label input__label-year" for="year">year</label>
+                        <input class="input__input input__input-year " type="text" name="year" placeholder="YYYY">
+                        <div class="error-element error-element-year"></div>
+                    </div>
+                </div>
+                <div class="card__icon">
+                    <button class="btn" type="submit"><img class="arrow-icon" src="images/icon-arrow.svg"
+                            alt="arrow-icon"></button>
+                </div>
+            </form>
+            <div class="results">
+                <p class="result result__year"><span class="dash dash__year">--</span>years</p>
+                <p class="result result__month"><span class="dash dash__month">--</span>months</p>
+                <p class="result result__day"><span class="dash dash__day">--</span>days</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
