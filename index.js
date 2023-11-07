@@ -45,7 +45,7 @@ form.addEventListener("submit", e => {
         labelYear.style.color = "hsl(0, 1%, 44%)"
     }
 
-    if (monthInput.value == "" || Number(monthInput.value) > 12) {
+    if (monthInput.value == "" || Number(monthInput.value) >= 12) {
         errorElementMonth.textContent = "must be valid month"
         monthInput.classList.add("error-input-month")
         labelMonth.style.color = "hsl(0, 100%, 67%)"
